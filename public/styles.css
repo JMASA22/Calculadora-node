@@ -9,7 +9,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-image: url(../img/fons-calculant.jpg) ;
+    /*background-image: url(../img/fons-calculant.jpg)*/ ;
     background-color: rgba(253, 255, 116, 0.434);
 
   }
@@ -97,4 +97,5 @@ body {
 
 .thinking-image {
   opacity: 0.8;
+  padding: 0px 0px 20px 0px;
 }
