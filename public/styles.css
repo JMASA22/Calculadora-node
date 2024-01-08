@@ -1,0 +1,100 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/fons-calculant.jpg) ;
+    background-color: rgba(253, 255, 116, 0.434);
+
+  }
+  
+  .calculator {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    outline: none;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.4rem;
+    background-color: rgb(115, 243, 255);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-right: 1px solid rgb(255, 255, 255); /* línia negra al costat dret */
+    border-bottom: 1px solid rgb(255, 255, 255); /* línia negra a la part inferior */
+  }
+
+
+
+  button[data-operation="AC"] {
+    background-color: rgb(255, 94, 94); 
+  }
+
+  button[data-operation="%"] {
+    background-color: rgb(255, 237, 237); 
+  }
+
+  button[data-operation="+/-"] {
+    background-color: rgb(255, 237, 237); 
+  }
+
+  button[data-operation="÷"] {
+    background-color: orange; 
+  }
+
+  button[data-operation="*"] {
+    background-color: orange; 
+  }
+
+  button[data-operation="-"] {
+    background-color: orange; 
+  }
+
+  button[data-operation="+"] {
+    background-color: orange; 
+  }
+
+  button[data-operation="="] {
+    background-color: rgb(255, 242, 61); 
+  }
+  
+  button[data-operation="."] {
+    background-color: rgb(205, 251, 255)
+  }
+
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  button[data-number="0"] {
+    grid-column: span 2;
+  }
+
+.thinking-image {
+  opacity: 0.8;
+}
