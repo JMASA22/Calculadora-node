@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 // Ruta per gestionar POST des d form
-app.post('/calcular', (req, res) => {
+app.post('/script', (req, res) => {
   const { num1, num2, operation } = req.body;
 
   let result;
@@ -33,7 +33,7 @@ app.post('/calcular', (req, res) => {
       result = parseFloat(num1) / parseFloat(num2);
       break;
     default:
-      resultado = 'Valid operation';
+      result = 'Valid operation';
   }
 
   res.send({ result });

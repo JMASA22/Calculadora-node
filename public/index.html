@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 <body>
-  <img src="../img/thinking-math.gif" alt="Galifianakis pensant" class="thinking-image">
+  <div class="content-container">
+      <img src="../img/thinking-math.gif" alt="Galifianakis pensant" class="thinking-image">
+      <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+          <button onclick="clearDisplay()" data-operation="AC">AC</button>
+          <button onclick="clearDisplay('+/-')" data-operation="+/-">+/-</button>
+          <button onclick="clearDisplay('%')" data-operation="%">%</button>
+          <button onclick="setOperation('÷')" data-operation="÷">÷</button>
 
-  <div class="calculator">
-    
-    <input type="text" id="display" readonly>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="setOperation('*')" data-operation="*">x</button>
 
-    <div class="buttons">
-      <button onclick="clearDisplay()" data-operation="AC">AC</button>
-      <button onclick="clearDisplay('+/-')" data-operation="+/-">+/-</button>
-      <button onclick="clearDisplay('%')" data-operation="%">%</button>
-      <button onclick="setOperation('÷')" data-operation="÷">÷</button>
-
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="setOperation('*')" data-operation="*">x</button>
-
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="setOperation('-')" data-operation="-">-</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="setOperation('-')" data-operation="-">-</button>
 
 
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="setOperation('+')" data-operation="+">+</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="setOperation('+')" data-operation="+">+</button>
 
-      <button onclick="appendToDisplay('0')" data-number="0">0</button>
-      <button onclick="appendDecimal()" data-operation=".">.</button>
-      <button onclick="calculate()"data-operation="=">=</button>
+          <button onclick="appendToDisplay('0')" data-number="0">0</button>
+          <button onclick="appendDecimal()" data-operation=".">.</button>
+          <button onclick="calculate()"data-operation="=">=</button>
+        </div> 
+      </div> 
     </div>
-  </div>
-  <div>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
